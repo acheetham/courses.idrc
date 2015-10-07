@@ -10,28 +10,27 @@ main a {
 main p {
     line-height: 150%;
 }
-
-.ref {
-    visibility: hidden;
-}
-
-.tocible {
-    margin: 15em 0 0 0;
-    width: 19em;
+main {
+    margin-top: 5.5em;
 }
 
 header {
-    margin-bottom: 2em;
+    height: 5em;
+    width: 99%;
+    z-index: 1;
+    background-color: #fff;    
+    border-bottom: 1px solid #333;
+}
+h1 {
+    margin: 0;
 }
 
-#side {
-    float: left;
+#main-nav {
     width: 18em;
-    position: fixed;
+    padding-top: 6em;    
+    height: 26em;
 }
-#content {
-    margin-left: 20em;
-}
+
 
 p.emph {
     background-color:#CFE8EF; 
@@ -39,8 +38,14 @@ p.emph {
     padding:1em;
 }
 
-
 code {
     font-family: monospace;
     color: black;
+}
+
+.anchor {
+    display: block;
+    height: 5em;
+    margin-top: -5em;
+    visibility: hidden;
 }
