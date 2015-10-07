@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title><%= @document.title %> | Understanding Web Accessibility Course</title>
+    <%- @getBlock("meta").toHTML() %>
+    <%- @getBlock("styles").add(["/styles/style.css", "/vendor/bootstrap/css/bootstrap.min.css", "vendor/tocible/jquery.tocible.css"]).toHTML() %>
+    <%- @getBlock("scripts").add(["/vendor/jquery-2.1.1.min.js", "/vendor/bootstrap/js/bootstrap.min.js", "/vendor/tocible/jquery.tocible.min.js", "/scripts/myscript.js"]).toHTML() %>
+</head>
+<body>
+    <div class="container-fluid" id="course">    
+
+    <header>
+        <a href="#content" class="sr-only sr-only-focusable pull-left">Skip to main content</a>
+        <h1>Understanding Web Accessibility</h1>
+    </header>
+    
+    <div id="side"> 
+        <nav id="main-nav">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="index.html">Introduction</a></li>
+                <li><a href="1_perceivable.html">Principle 1: Perceivable</a>
+                    <ul>
+                        <li><a href="#reasons">Reasons</a></li>
+                        <li><a href="#guidelines">Guidelines</a></li>
+                        <li><a href="#barriers">Barriers</a></li>
+                        <li><a href="#criteria">Success Criteria</a></li>
+                        <li><a href="#techniques">Sufficient Techniques</a></li>                                                                                                
+                        <li><a href="#considerations">Other Considerations</a></li>
+                        <li><a href="#exercise">Exercise</a></li>
+                    </ul>
+                </li>
+                <li><a href="2_operable.html">Principle 2: Operable</a></li>
+                <li><a href="3_understandable.html">Principle 3: Understandable</a></li>
+                <li><a href="4_robust.html">Principle 4: Robust</a></li>            
+            </ul>
+        </nav>     
+        <!-- div class="ref">
+        </div -->        
+        <%- @getBlock("scripts").toHTML() %>          
+    </div>
+    <main id="content">            
+        <h2><%= @document.title %></h2>
+        <%- @content %>
+    </main>
+    
+    </div>
+</body>
+</html>

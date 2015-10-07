@@ -1,0 +1,46 @@
+/* stylesheet */
+
+a:link, a:visited {
+    color: darkblue;
+}
+main a {
+    text-decoration: underline;
+}
+
+main p {
+    line-height: 150%;
+}
+
+.ref {
+    visibility: hidden;
+}
+
+.tocible {
+    margin: 15em 0 0 0;
+    width: 19em;
+}
+
+header {
+    margin-bottom: 2em;
+}
+
+#side {
+    float: left;
+    width: 18em;
+    position: fixed;
+}
+#content {
+    margin-left: 20em;
+}
+
+p.emph {
+    background-color:#CFE8EF; 
+    border: thin dashed black; 
+    padding:1em;
+}
+
+
+code {
+    font-family: monospace;
+    color: black;
+}
